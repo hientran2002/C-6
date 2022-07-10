@@ -1,0 +1,42 @@
+﻿@page "/employees"
+@inject BlazorApp5.Data.IEmployeeService EmployeeService;
+<h3>List Employees</h3>
+<a href="employee/0">Add Employee</a>
+<table class="table">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>
+                123
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in employees)
+        {
+            <tr>
+                <td>@employee.Id</td>
+                <td>@employee.Name</td>
+                <td>
+                    
+                    <a href="employee/@employee.Id">
+                        Edit
+                    </a>
+                </td>
+                <td @onclick="@(e=> OnDelete(employee.Id))">Delete</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@code {
+    private List<BlazorApp5.Data.Employee> employees;
+    protected override void OnInitialized()
+    {
+        employees = EmployeeService.GetEmployees();
+    }
+    private void OnDelete(Guid id)
+    {
+        EmployeeService.deleteEmployess(id);
+    }
+}

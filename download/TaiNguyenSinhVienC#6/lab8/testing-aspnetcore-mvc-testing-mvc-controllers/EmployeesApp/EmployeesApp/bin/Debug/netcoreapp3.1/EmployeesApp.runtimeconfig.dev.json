@@ -1,0 +1,10 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "W:\\Users\\Thepv\\.dotnet\\store\\|arch|\\|tfm|",
+      "W:\\Users\\Thepv\\.nuget\\packages",
+      "W:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+      "W:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+    ]
+  }
+}

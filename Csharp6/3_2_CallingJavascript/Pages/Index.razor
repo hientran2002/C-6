@@ -1,0 +1,20 @@
+﻿@page "/"
+@inject IJSRuntime ISRuntime
+
+<div>
+    <p>Current DateTime: <b>@CurrentDateTime</b></p>
+    <br />
+    <input  type="button" @onclick="@GetCurrentDateTime" value="Get datetime" />
+</div>
+
+@code{
+    [Parameter]
+    public string CurrentDateTime{ get; set; }
+
+    private async void GetCurrentDateTime()
+    {
+        CurrentDateTime = await ISRuntime.InvokeAsync<string>("getDateTime");
+        StateHasChanged();
+
+    }
+}

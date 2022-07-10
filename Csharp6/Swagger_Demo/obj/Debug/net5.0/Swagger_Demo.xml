@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Swagger_Demo</name>
+    </assembly>
+    <members>
+        <member name="P:Swagger_Demo.WeatherForecast.Date">
+            <summary>
+            Date for the weather
+            </summary>
+        </member>
+        <member name="P:Swagger_Demo.WeatherForecast.TemperatureC">
+            <summary>
+            Temperature in C
+            </summary>
+        </member>
+        <member name="P:Swagger_Demo.WeatherForecast.TemperatureF">
+            <summary>
+            Temperature in F
+            </summary>
+        </member>
+        <member name="P:Swagger_Demo.WeatherForecast.Summary">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
